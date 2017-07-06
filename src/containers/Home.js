@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/fuelSavingsActions';
-
+import lodash from "lodash";
 class Home extends React.Component {
   constructor(props, context) {
     super(props, context);
-
+    console.log(lodash.sum(0.1,0.2));
   }
 
 
