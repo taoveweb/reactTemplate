@@ -37,6 +37,8 @@ class Home extends React.Component {
     const color = "purple";
     return (
       <div>
+        <div className="header">asdfasfasf</div>
+
         <Header color={color} {...this.props}/>
         <Main {...this.props}/>
       </div>
