@@ -7,7 +7,7 @@ import {
   Header,
   Main,
 } from '../components/home-view';
-class Home extends React.Component {
+class New1 extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state={
@@ -21,7 +21,7 @@ class Home extends React.Component {
       this.setState({
         tilte:'ccc',
         body:'333'
-      });
+      })
     },4000);
 
    //this.state.tilte='aaaaa'
@@ -44,7 +44,7 @@ class Home extends React.Component {
   }
 }
 
-Home.propTypes = {
+New1.propTypes = {
   actions: PropTypes.object.isRequired,
   fuelSavings: PropTypes.object.isRequired
 };
@@ -64,4 +64,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home);
+)(New1);

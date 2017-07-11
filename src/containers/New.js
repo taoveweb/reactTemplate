@@ -7,25 +7,16 @@ import {
   Header,
   Main,
 } from '../components/home-view';
-class Home extends React.Component {
+class New extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state={
-      tilte:'首页1'
+      tilte:'新页面'
     };
   }
 
   componentDidMount() {
-    window.setTimeout(()=>{
-      console.log('aaaa');
-      this.setState({
-        tilte:'ccc',
-        body:'333'
-      });
-    },4000);
 
-   //this.state.tilte='aaaaa'
-    console.log('aaa');
   }
 
   componentWillUnmount() {
@@ -37,6 +28,7 @@ class Home extends React.Component {
     const color = "purple";
     return (
       <div>
+        {this.state.tilte}
         <Header color={color} {...this.props}/>
         <Main {...this.props}/>
       </div>
@@ -44,7 +36,7 @@ class Home extends React.Component {
   }
 }
 
-Home.propTypes = {
+New.propTypes = {
   actions: PropTypes.object.isRequired,
   fuelSavings: PropTypes.object.isRequired
 };
@@ -64,4 +56,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home);
+)(New);
