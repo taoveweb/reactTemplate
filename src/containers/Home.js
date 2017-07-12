@@ -24,8 +24,6 @@ class Home extends React.Component {
       });
     },4000);
 
-   //this.state.tilte='aaaaa'
-    console.log('aaa');
   }
 
   componentWillUnmount() {
@@ -33,13 +31,19 @@ class Home extends React.Component {
   }
 
 
+
+
+  handle=(e)=>{
+    console.log(e.currentTarget);
+  }
+
   render() {
     const color = "purple";
     return (
       <div>
-        <div className="header">asdfasfasf</div>
+        <div onClick={this.handle} className="header">asdfasfasf</div>
 
-        <Header color={color} {...this.props}/>
+        <Header  color={color} {...this.props}/>
         <Main {...this.props}/>
       </div>
     );
