@@ -5,12 +5,16 @@ import PropTypes from 'prop-types';
 // version of hot reloading won't hot reload a stateless
 // component at the top-level.
 class App extends React.Component {
-
+ onChange=(date, dateString)=> {
+  console.log(date, dateString);
+}
 
   render() {
     return (
       <div>
         首页主要内容
+        <br />
+        <br />
       </div>
     );
   }
